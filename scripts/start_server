@@ -1,3 +1,4 @@
 #!/bin/bash
+cd /home/ec2-user/public
 sudo node app.js
 
