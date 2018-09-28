@@ -1,3 +1,2 @@
 #!/bin/bash
 cd /opt/actualbuild/
-sudo ls | grep -v install | xargs rm -rf
