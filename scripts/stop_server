@@ -1,3 +1,4 @@
 #!/bin/bash
-cd /home/ec2-user/public
+cd /opt/actualbuild/
+sudo ls | grep -v install | xargs rm -rf
 
