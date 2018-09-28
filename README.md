@@ -1,0 +1,1 @@
+environment variable is in: ./config/config.js file

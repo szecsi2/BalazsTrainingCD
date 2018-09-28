@@ -1,0 +1,4 @@
+{
+    "dbURL":"mongodb://mongouser:secret@localhost:27017/demo",
+    "sessionSecret":"blabla"
+}

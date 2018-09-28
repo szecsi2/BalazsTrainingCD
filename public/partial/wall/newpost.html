@@ -1,0 +1,69 @@
+<form ng-submit="makeNewPost()">
+
+    <div class="form-group">
+        <label for="userName" class="control-label">User Name</label>
+        <input type="text" autocomplete="off" class="form-control" ng-model="post.userName" id="userName" required="required">
+    </div>
+
+    <div class="form-group">
+        <label for="title" class="control-label">Title</label>
+        <input type="text" autocomplete="off" class="form-control" ng-model="post.title" id="title" required="required">
+    </div>
+    
+    <div class="form-group">
+        <label for="description" class="control-label">Description</label>
+        <input type="text" autocomplete="off" class="form-control" ng-model="post.description" id="description" required="required">
+    </div>
+
+    <div class="form-group">
+        <label for="category" class="control-label">Category</label>
+        <select type="text" class="form-control" ng-model="post.category" id="category" required="required">
+            <option value="">Category...</option>
+            <option value="Games">Games</option>
+            <option value="Health">Health</option>
+            <option value="Hospital">Hospital</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Household Supplies">Household Supplies</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Jewellery">Jewellery</option>
+            <option value="Journalism">Journalism</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Legal">Legal</option>
+            <option value="Magazines">Magazines</option>
+            <option value="Media">Media</option>
+            <option value="Movies">Movies</option>
+            <option value="Museum">Museum</option>
+            <option value="Music">Music</option>
+            <option value="News">News</option>
+            <option value="Nighlife">Nighlife</option>
+            <option value="Non-governmental Organisation (NGO)">Non-governmental Organisation (NGO)</option>
+            <option value="Performance Art">Performance Art</option>
+            <option value="Personal Care">Personal Care</option>
+            <option value="Pets">Pets</option>
+            <option value="Phone/Tablet">Phone/Tablet</option>
+            <option value="Photography">Photography</option>
+            <option value="Politics">Politics</option>
+            <option value="Products">Products</option>
+            <option value="Property">Property</option>
+            <option value="Religion">Religion</option>
+            <option value="Restaurants">Restaurants</option>
+            <option value="Retail">Retail</option>
+            <option value="Science">Science</option>
+            <option value="Services">Services</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Software">Software</option>
+            <option value="Sports">Sports</option>
+            <option value="Tools">Tools</option>
+            <option value="Tours">Tours</option>
+            <option value="Toys">Toys</option>
+            <option value="Transport">Transport</option>
+            <option value="Travel">Travel</option>
+            <option value="TV">TV</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+<div ng-show="postCreated">Your post has been created.</div>

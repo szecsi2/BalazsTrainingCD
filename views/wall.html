@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Demo app</title>
+
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/style2.css" rel="stylesheet">
+  </head>
+
+<body>
+
+<!--This is where the whole container starts-->
+	<div class="container-fluid">
+<!--This is where the top navigation bar starts-->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="navbar navbar-inverse">
+					<div class="container">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			        			<span class="icon-bar"></span>
+			        			<span class="icon-bar"></span>
+			        			<span class="icon-bar"></span>
+			      			</button>
+							<a class="navbar-brand" href="/wall#/">Demo</a>
+						</div>
+
+<!--This is where the righthand side of the navigation bar starts-->
+						<div class="navbar-collapse collapse" id="searchbar">
+							
+							<ul class="nav navbar-nav navbar-right">
+								<li class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown">Settings<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">Profile Settings</a>
+										</li>
+										<li class="divider"></li>
+										<li>
+											<a href="#">Logout</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<form class="navbar-form">
+								<div class="form-group" style="display:inline;">
+									<div class="col-md-offset-4 input-group" style="display:table;">
+										<input ng-model="search.text" class="form-control" name="search" placeholder="Search Here" autocomplete="off" autofocus="autofocus" type="text">
+										<span class="input-group-addon" style="width:1%;">
+											<span class="glyphicon glyphicon-search"></span>
+										</span>
+									</div>
+								</div>
+							</form>
+							
+						</div>
+<!--This is where the righthand side of the navigation bar ends-->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+<!--This is where the top navigation bar ends-->
+
+
+		<div class="row">
+<!--This is where the left pane pane starts-->
+			<div class="col-md-2">
+				<div class="panel panel-default blackBorder">
+					<div class="panel-body fixed-panel blackBackground">
+						<div class="row">
+							<div class="col-md-11 col-md-offset-1">
+								<a href="/wall#/">Home</a><br>
+								<a href="/wall#newpost">New Post</a><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--This is where the left pane pane ends-->
+
+<!--This is where the middle pane pane starts-->
+	<div class="col-md-6 col-md-offset-1">
+		<div ng-view></div>
+	</div>
+<!--This is where the middle pane pane ends-->
+
+<!--This is where the right pane pane starts-->
+			<div class="col-md-2 col-md-offset-1">
+				<div class="panel panel-default blackBorder">
+					<div class="panel-body fixed-panel blackBackground">
+					</div>
+				</div>
+			</div>
+<!--This is where the right pane pane ends-->
+		</div>
+	</div>
+<!--This is where the whole container ends-->
+
+<!-- Bootstrap core JavaScript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/jsLib/bootstrap.js"></script>
+  <script src="/jsLib/angular.min.js"></script>
+  <script src="/jsLib/angular-route.min.js"></script>
+  <script src="/angular/angularApp.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+	
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+//Example below
+/*
+{
+    "dbURL":"mongodb://username:pwd@DBUrl:port/DBName",
+    "sessionSecret":"blablablablabla"
+}
+*/
