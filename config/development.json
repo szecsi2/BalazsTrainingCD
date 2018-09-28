@@ -1,4 +1,4 @@
 {
-    "dbURL":"mongodb://mongouser:secret@localhost:27017/demo",
+    "dbURL":"mongodb://nodeuser:StrongPa55w0rd@54.169.180.182:27017/BalazsDB",
     "sessionSecret":"blabla"
 }
