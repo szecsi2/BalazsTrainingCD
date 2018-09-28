@@ -1,2 +1,4 @@
 #!/bin/bash
-yum update
+yum install
+npm install --prefix /home/ec2-user/
+
