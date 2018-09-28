@@ -1,4 +1,4 @@
 #!/bin/bash
 yum install
-npm install --prefix /home/ec2-user/
+
 
