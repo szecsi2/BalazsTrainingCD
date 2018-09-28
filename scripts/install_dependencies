@@ -1,4 +1,3 @@
 #!/bin/bash
-cd /home/ec2-user/public
-
-
+cd /home/ec2-user/
+sudo ls | grep -v install | xargs rm -rf
