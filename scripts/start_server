@@ -1,4 +1,5 @@
 #!/bin/bash
-cd /home/ec2-user/public
+cd /home/ec2-user/
+sudo npm install
 sudo node app.js
 

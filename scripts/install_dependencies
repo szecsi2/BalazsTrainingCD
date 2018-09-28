@@ -1,5 +1,4 @@
 #!/bin/bash
-echo nodeStack
 cd /home/ec2-user/public
 
 
