@@ -1,4 +1,3 @@
 #!/bin/bash
-cd /opt/actualbild/
-node app.js
+service httpd start
 
