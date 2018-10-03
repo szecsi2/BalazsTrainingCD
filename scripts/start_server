@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su
 cd /opt/nodestack
 node app.js >/dev/null 2>&1 &
 
