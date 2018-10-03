@@ -1,4 +1,4 @@
 #!/bin/bash
-yum update
+echo "Install Dependencies"
 
 
